@@ -1,0 +1,15 @@
+---
+import sampleImage from '@/assets/sample.png';
+import Layout from '@/layouts/Layout.astro';
+import { Image } from 'astro:assets';
+---
+
+<Layout>
+    <h1>About Page</h1>
+    <p>This is the about page of the Astro application.</p>
+    <Image src={sampleImage} width={300} alt="Sample Image" />
+
+    <script>
+        console.log('About page loaded');
+    </script>
+</Layout>  

@@ -1,3 +1,7 @@
+---
+import "@/styles/starwind.css";
+---
+<!-- layout code... -->
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,8 +11,13 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
-		<slot />
+	<body>	
+		<nav>
+			<a href="/">Home</a> | <a href="/about">About</a>	
+		</nav>	
+		<div>
+			<slot />
+		</div>	
 	</body>
 </html>
 
